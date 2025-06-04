@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carregando...</title>
+  <style>
+    @font-face {
+      font-family: 'LiveSat';
+      src: url('assets/livesat.ttf') format('truetype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      background-color: #000;
+      font-family: 'LiveSat', Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    #loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+    }
+
+    #logo {
+      width: 150px;
+      height: auto;
+      z-index: 2;
+      transition: transform 1s ease;
+      position: absolute;
+    }
+
+    #sublogo {
+      width: 200px;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      opacity: 0;
+      transform: scale(0.5) translateX(0);
+    }
+
+    .move-logo {
+      transform: translateX(-150px);
+    }
+
+    .mostrar-sublogo {
+      animation: subirECrescer 0.5s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    @keyframes subirECrescer {
+      from {
+        opacity: 0;
+        transform: scale(1) translateX(0);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1.5) translateX(50px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="loader">
+    <img id="logo" src="assets/logo.png" alt="Logo">
+    <img id="sublogo" src="assets/subtextologo.png" alt="Sublogo">
+  </div>
+
+  <script>
+    setTimeout(() => {
+      const logo = document.getElementById('logo');
+      const sublogo = document.getElementById('sublogo');
+
+      logo.classList.add('move-logo');
+      sublogo.classList.add('mostrar-sublogo');
+
+      // Espera 0.8s para redirecionar (0.3s de delay + 0.5s de animação)
+      setTimeout(() => {
+        window.location.href = "indexlivesat.html";
+      }, 1000);
+
+    }, 2000);
+  </script>
+</body>
+</html>
