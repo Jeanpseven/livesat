@@ -1,1 +1,1 @@
-livesiteativo=false
+livesiteativo=true
