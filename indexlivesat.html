@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +13,7 @@
     body {
       margin: 0;
       font-family: 'LiveSat', Arial, sans-serif;
-      background: url('assets/background.mp4');
+      background-color: #000;
       color: #fff;
       text-transform: uppercase;
     }
@@ -96,21 +95,10 @@
     }
 
     @keyframes brilhoWhatsapp {
-      0% {
-        filter: drop-shadow(0 0 2px #ffc209);
-      }
-
-      30% {
-        filter: drop-shadow(0 0 6px #ffdc6e);
-      }
-
-      60% {
-        filter: drop-shadow(0 0 10px #fff3cc);
-      }
-
-      100% {
-        filter: drop-shadow(0 0 15px #ffffff);
-      }
+      0% { filter: drop-shadow(0 0 2px #ffc209); }
+      30% { filter: drop-shadow(0 0 6px #ffdc6e); }
+      60% { filter: drop-shadow(0 0 10px #fff3cc); }
+      100% { filter: drop-shadow(0 0 15px #ffffff); }
     }
 
     footer {
@@ -150,122 +138,84 @@
       section {
         padding: 20px 10px;
       }
-
-      #bg-video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        opacity: 0.3;
-        /* opcional: ajuste a opacidade */
-      }
-
-      .conteudo {
-        position: relative;
-        z-index: 1;
-        background-color: rgba(0, 0, 0, 0.85);
-        /* fundo preto semi-transparente */
-        border: 5px solid #ffc209;
-        /* borda amarela */
-        border-radius: 10px;
-        margin: 20px;
-        padding: 20px;
-        box-shadow: 0 0 20px #ffc209;
-      }
-
     }
   </style>
 </head>
-
 <body>
-
   <header>
     <h1>LIVE SAT RASTREAMENTO 24H</h1>
     <p>RASTREADORES COM BLOQUEIO - PESSOAL OU EMPRESARIAL</p>
   </header>
-  <!-- <video autoplay muted loop playsinline id="bg-video">
-  <source src="assets/background.mp4" type="video/mp4">
-  Seu navegador não suporta vídeos HTML5.
-</video> -->
 
-
-  <div class="conteudo"><section>
+  <section>
     <h2>PLANOS MENSAIS</h2>
     <div class="planos">
-      <div class="plano"
-        onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20MOTO%20de%20R$%2035,90', '_blank')">
+      <div class="plano" onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20MOTO%20de%20R$%2035,90', '_blank')">
         <img style="height:45%;width:100%" src="assets/moto.png" alt="Moto">
         <h3>MOTO</h3>
         <p>R$ 35,90 / MÊS</p>
       </div>
 
-      <div class="plano"
-        onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20CARRO%20de%20R$%2039,90', '_blank')">
+      <div class="plano" onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20CARRO%20de%20R$%2039,90', '_blank')">
         <img style="height:45%;width:110%" src="assets/carro2.png" alt="Carro">
         <h3>CARRO</h3>
         <p>R$ 39,90 / MÊS</p>
       </div>
 
-      <div class="plano"
-        onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20CAMINHÃO%20de%20R$%2049,90', '_blank')">
+      <div class="plano" onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20CAMINHÃO%20de%20R$%2049,90', '_blank')">
         <img style="height:60%;width:100%" src="assets/truck.png" alt="Caminhão">
         <h3>CAMINHÃO</h3>
         <p>R$ 49,90 / MÊS</p>
       </div>
 
-      <div class="plano"
-        onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20JET-SKI%20de%20R$%2055,90', '_blank')">
+      <div class="plano" onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20JET-SKI%20de%20R$%2055,90', '_blank')">
         <img style="height:45%;width:100%" src="assets/jetski.png" alt="Jet Ski">
         <h3>JET SKI</h3>
         <p>R$ 55,90 / MÊS</p>
+        </div>
+    </div>
+  <section>
+    <h2>Produtos</h2>
+    <div class="planos">
+      <div class="plano" onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20Rastreador%20de%20R$%20189,00', '_blank')">
+        <img style="height:45%;width:100%" src="assets/produtos/rastreador.png" alt="Rastreador">
+        <h3>Rastreador - Instalado com Cabo Bloqueio</h3>
+        <p>R$ 189,00</p>
+      </div>
+
+      <div class="plano" onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20WEBTag%20de%20R$%20139,00', '_blank')">
+        <img style="height:45%;width:100%" src="assets/produtos/webtga.png" alt="Web Tag">
+        <h3>Web Tag</h3>
+        <p>R$ 139,00</p>
+        <p>R$19,00 Mensal</p>
+      </div>
+
+      <div class="plano" onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20Coleira+Tag%20de%20R$%20159,00', '_blank')">
+        <img style="height:45%;width:100%" src="assets/produtos/coleira+tag.png" alt="Coleira e Tag">
+        <h3>Coleira + Tag</h3>
+        <p>R$ 159,00 Ou</p>
+        <p>R$19,00 Mensal</p>
       </div>
     </div>
-    <section>
-      <h2>Produtos</h2>
-      <div class="planos">
-        <div class="plano"
-          onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20Rastreador%20de%20R$%20189,00', '_blank')">
-          <img style="height:45%;width:100%" src="assets/produtos/rastreador.png" alt="Rastreador">
-          <h3>Rastreador - Instalado com Cabo Bloqueio</h3>
-          <p>R$ 189,00</p>
-        </div>
 
-        <div class="plano"
-          onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20WEBTag%20de%20R$%20139,00', '_blank')">
-          <img style="height:45%;width:100%" src="assets/produtos/webtga.png" alt="Web Tag">
-          <h3>Web Tag</h3>
-          <p>R$ 139,00</p>
-          <p>R$19,00 Mensal</p>
-        </div>
+    <div>
+      <a class="botao-whatsapp" href="https://wa.me/553182829723" target="_blank">FALAR NO WHATSAPP</a>
+    </div>
+    
+  </section>
 
-        <div class="plano"
-          onclick="window.open('https://wa.me/553182829723?text=Estou%20interessado%20no%20plano%20de%20Coleira+Tag%20de%20R$%20159,00', '_blank')">
-          <img style="height:45%;width:100%" src="assets/produtos/coleira+tag.png" alt="Coleira e Tag">
-          <h3>Coleira + Tag</h3>
-          <p>R$ 159,00 Ou</p>
-          <p>R$19,00 Mensal</p>
-        </div>
-      </div>
+  <section>
+    <h2>VANTAGENS</h2>
+    <p>LOCALIZAÇÃO E BLOQUEIO EM TEMPO REAL</p>
+    <p>ATENDIMENTO 0800 24 HORAS (A CONTRATAR)</p>
+    <p>ALERTAS DE SEGURANÇA - HISTÓRICO DE ROTAS</p>
+  </section>
 
-      <div>
-        <a class="botao-whatsapp" href="https://wa.me/553182829723" target="_blank">FALAR NO WHATSAPP</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>VANTAGENS</h2>
-      <p>LOCALIZAÇÃO E BLOQUEIO EM TEMPO REAL</p>
-      <p>ATENDIMENTO 0800 24 HORAS</p>
-      <p>ALERTAS DE SEGURANÇA - HISTÓRICO DE ROTAS</p>
-    </section>   </div>
-
-    <footer>
-      <p>FALE CONOSCO PELO WHATSAPP: <span class="whatsapp">(31) 8282-9723</span></p>
-      <p>&copy; 2025 LIVE SAT RASTREAMENTO</p>
-    </footer>
+  <footer>
+    <p>FALE CONOSCO PELO WHATSAPP: <span class="whatsapp">(31) 8282-9723</span></p>
+    <p>&copy; 2025 LIVE SAT RASTREAMENTO</p>
+  </footer>
+  <script href="script.js"></script>
+    
 </body>
-
 </html>
